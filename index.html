@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encryption/Decryption Tool</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Encryption/Decryption</h1>
+        <textarea id="inputText" placeholder="Enter text to encrypt/decrypt"></textarea>
+        <input type="text" id="encryptionKey" placeholder="Encryption Key">
+        <button onclick="encryptText()">Encrypt</button>
+        <button onclick="decryptText()">Decrypt</button>
+        <textarea id="outputText" placeholder="Result will appear here" readonly></textarea>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
